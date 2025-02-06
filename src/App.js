@@ -4,12 +4,12 @@ import React from "react";
 import "./App.css";
 
 //Components
-import SocialQR from "./components/modules/SocialQr";
+import MainPage from "./components/templates/MainPage";
 
 function App() {
   return (
     <div className="App">
-      <SocialQR />
+      <MainPage />
     </div>
   );
 }

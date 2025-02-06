@@ -1,52 +1,113 @@
 import React from "react";
-import { QRCodeSVG } from "qrcode.react";
+import Accordion from "../modules/Accordion";
+import { Typography } from "@mui/material";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import LanguageIcon from "@mui/icons-material/Language";
 
 const SocialQR = () => {
-  // Combine your links into a single string
-  const socialLinks =
-    `Instagram: https://instagram.com/mahlamohtasham.hairstudio\n` +
-    `Website: https://mohtashamhairstudio.ir`;
+  const servicesLines = [
+    {
+      id: "keratine",
+      responsible: "مهلا محتشم",
+      mainService: "احیاء و صافی",
+      social: [
+        {
+          id: "instagram",
+          icon: <InstagramIcon fontSize="small" sx={{ ml: 0.5 }} />,
+          title: "اینستاگرام",
+          type: "url",
+          value: "https://instagram.com/mahlamohtasham.hairstudio",
+        },
+        {
+          id: "whatspp",
+          icon: <WhatsAppIcon fontSize="small" sx={{ ml: 0.5 }} />,
+          title: "شماره واتساپ",
+          type: "text",
+          value: "09156316631",
+        },
+        {
+          id: "website",
+          icon: <LanguageIcon fontSize="small" sx={{ ml: 0.5 }} />,
+          title: "آدرس وبسایت",
+          type: "url",
+          value: "https://MohtashamHairStudio.ir",
+        },
+        {
+          id: "call",
+          icon: <PhoneAndroidIcon fontSize="small" sx={{ ml: 0.5 }} />,
+          title: "شماره تماس",
+          type: "text",
+          value: "09156606636, 09331651902",
+        },
+      ],
+    },
+    // {
+    //   id: "hair-dying",
+    //   responsible: "الناز علیپور",
+    //   mainService: "رنگ و لایت",
+    //   social: [
+    //     {
+    //       id: "instagram",
+    //       url: "https://instagram.com/elnaz__haircolor",
+    //     },
+    //     {
+    //       id: "website",
+    //       url: "https://ElnazHairColor.ir",
+    //     },
+    //   ],
+    // },
+  ];
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>Mahla Mohtasham Hair Studio Social</h1>
-      <div style={styles.qrContainer}>
-        <QRCodeSVG
-          value={socialLinks}
-          size={256}
-          level="H" // Error correction level
-          fgColor="#2c3e50" // QR code color
-          bgColor="#ffffff" // Background color
-        />
+      <Typography
+        variant="h6"
+        component="h6"
+        sx={{
+          fontSize: "16px",
+          fontFamily: "Vazir, sans-serif",
+          fontWeight: "bold",
+          color: "",
+          "@media(min-width:500px)": {
+            fontSize: "20px",
+          },
+        }}
+      >
+        سالن تخصصی زیبایی مو مهلا محتشم
+      </Typography>
+      <div style={styles.mainServices}>
+        {servicesLines.map((service) => (
+          <Accordion key={service.id} {...service} />
+        ))}
       </div>
-      <p style={styles.note}>Scan this QR code to view my social profiles</p>
     </div>
   );
 };
 
 const styles = {
   container: {
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "2rem",
-    minHeight: "100vh",
-    backgroundColor: "#f5f6fa",
-  },
-  heading: {
-    color: "#2c3e50",
-    marginBottom: "2rem",
-  },
-  qrContainer: {
     padding: "1rem",
-    backgroundColor: "white",
+    minHeight: "100vh",
+    margin: "auto",
+    backgroundColor: "white", // Example gradient
     borderRadius: "10px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
   },
-  note: {
+  mainServices: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "1rem",
+    borderRadius: "10px",
+    width: "100%",
     marginTop: "1.5rem",
-    color: "#7f8c8d",
-    fontSize: "0.9rem",
+    maxWidth: "500px",
   },
 };
 
