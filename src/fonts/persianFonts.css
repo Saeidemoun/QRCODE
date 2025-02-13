@@ -1,0 +1,134 @@
+@font-face {
+	font-family: 'Yekan';
+	src: url('./iranyekan/Yekan.ttf') 
+	format('truetype'), 
+	url('./iranyekan/Yekan.woff')
+	format('woff'),
+	url('./iranyekan/Yekan.woff2')
+	format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "YekanBakh";
+	font-style: normal;
+	font-weight: 200;
+	src: url('./YekanBakh/Font-Family/Webfonts/woff/YekanBakh-Light.woff') format('woff'),
+	url('./YekanBakh/Font-Family/Webfonts/woff2/YekanBakh-Light.woff2') format('woff2'),
+	url('./YekanBakh/Font-Family/YekanBakh-Light.ttf') format('ttf'),
+	url('./YekanBakh/Font-Family/otf/YekanBakh-Light.otf') format('otf'),
+	url('./YekanBakh/Non-English/YekanBakhNoEn-Light.ttf') format('ttf'),
+	url('./YekanBakh/Non-English/otf/YekanBakhNoEn-Light.otf') format('otf'),
+	url('./YekanBakh/Non-English/Webfonts/woff/YekanBakhNoEn-Light.woff') format('woff'),
+	url('./YekanBakh/Non-English/Webfonts/woff2/YekanBakhNoEn-Light.woff2') format('woff2'),
+	url('./YekanBakh/Farsi-Numerals/otf/YekanBakhFaNum-Light.otf') format('otf'),
+	url('./YekanBakh/Farsi-Numerals/YekanBakhFaNum-Light.ttf') format('ttf'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff/YekanBakhFaNum-Light.woff') format('woff'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff2/YekanBakhFaNum-Light.woff2') format('woff2');
+	text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "YekanBakh";
+	font-style: normal;
+	font-weight: 400;
+	src: url('./YekanBakh/Font-Family/Webfonts/woff/YekanBakh-Regular.woff') format('woff'),
+	url('./YekanBakh/Font-Family/Webfonts/woff2/YekanBakh-Regular.woff2') format('woff2'),
+	url('./YekanBakh/Font-Family/YekanBakh-Regular.ttf') format('ttf'),
+	url('./YekanBakh/Font-Family/otf/YekanBakh-Regular.otf') format('otf'),
+	url('./YekanBakh/Non-English/YekanBakhNoEn-Regular.ttf') format('ttf'),
+	url('./YekanBakh/Non-English/otf/YekanBakhNoEn-Regular.otf') format('otf'),
+	url('./YekanBakh/Non-English/Webfonts/woff/YekanBakhNoEn-Regular.woff') format('woff'),
+	url('./YekanBakh/Non-English/Webfonts/woff2/YekanBakhNoEn-Regular.woff2') format('woff2'),
+	url('./YekanBakh/Farsi-Numerals/otf/YekanBakhFaNum-Regular.otf') format('otf'),
+	url('./YekanBakh/Farsi-Numerals/YekanBakhFaNum-Regular.ttf') format('ttf'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff/YekanBakhFaNum-Regular.woff') format('woff'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');
+	text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "YekanBakh";
+	font-style: normal;
+	font-weight: 600;
+	src: url('./YekanBakh/Font-Family/Webfonts/woff/YekanBakh-SemiBold.woff') format('woff'),
+	url('./YekanBakh/Font-Family/Webfonts/woff2/YekanBakh-SemiBold.woff2') format('woff2'),
+	url('./YekanBakh/Font-Family/YekanBakh-SemiBold.ttf') format('ttf'),
+	url('./YekanBakh/Font-Family/otf/YekanBakh-SemiBold.otf') format('otf'),
+	url('./YekanBakh/Non-English/YekanBakhNoEn-SemiBold.ttf') format('ttf'),
+	url('./YekanBakh/Non-English/otf/YekanBakhNoEn-ExtraBold.otf') format('otf'),
+	url('./YekanBakh/Non-English/Webfonts/woff/YekanBakhNoEn-SemiBold.woff') format('woff'),
+	url('./YekanBakh/Non-English/Webfonts/woff2/YekanBakhNoEn-SemiBold.woff2') format('woff2'),
+	url('./YekanBakh/Farsi-Numerals/otf/YekanBakhFaNum-SemiBold.otf') format('otf'),
+	url('./YekanBakh/Farsi-Numerals/YekanBakhFaNum-SemiBold.ttf') format('ttf'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff/YekanBakhFaNum-SemiBold.woff') format('woff'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff2/YekanBakhFaNum-SemiBold.woff2') format('woff2');
+	text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "YekanBakh";
+	font-style: normal;
+	font-weight: 800;
+	src: url('./YekanBakh/Font-Family/Webfonts/woff/YekanBakh-ExtraBlack.woff') format('woff'),
+	url('./YekanBakh/Font-Family/Webfonts/woff2/YekanBakh-ExtraBlack.woff2') format('woff2'),
+	url('./YekanBakh/Font-Family/YekanBakh-ExtraBlack.ttf') format('ttf'),
+	url('./YekanBakh/Font-Family/otf/YekanBakh-ExtraBlack.otf') format('otf'),
+	url('./YekanBakh/Non-English/YekanBakhNoEn-ExtraBlack.ttf') format('ttf'),
+	url('./YekanBakh/Non-English/otf/YekanBakhNoEn-ExtraBlack.otf') format('otf'),
+	url('./YekanBakh/Non-English/Webfonts/woff/YekanBakhNoEn-ExtraBlack.woff') format('woff'),
+	url('./YekanBakh/Non-English/Webfonts/woff2/YekanBakhNoEn-ExtraBlack.woff2') format('woff2'),
+	url('./YekanBakh/Farsi-Numerals/otf/YekanBakhFaNum-ExtraBlack.otf') format('otf'),
+	url('./YekanBakh/Farsi-Numerals/YekanBakhFaNum-ExtraBlack.ttf') format('ttf'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff/YekanBakhFaNum-ExtraBlack.woff') format('woff'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff2/YekanBakhFaNum-ExtraBlack.woff2') format('woff2');
+	text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "YekanBakh";
+	font-style: normal;
+	font-weight: bold;
+	src: url('./YekanBakh/Font-Family/Webfonts/woff/YekanBakh-Bold.woff') format('woff'),
+	url('./YekanBakh/Font-Family/Webfonts/woff2/YekanBakh-Bold.woff2') format('woff2'),
+	url('./YekanBakh/Font-Family/YekanBakh-Bold.ttf') format('ttf'),
+	url('./YekanBakh/Font-Family/otf/YekanBakh-Bold.otf') format('otf'),
+	url('./YekanBakh/Non-English/YekanBakhNoEn-Bold.ttf') format('ttf'),
+	url('./YekanBakh/Non-English/otf/YekanBakhNoEn-Bold.otf') format('otf'),
+	url('./YekanBakh/Non-English/Webfonts/woff/YekanBakhNoEn-Bold.woff') format('woff'),
+	url('./YekanBakh/Non-English/Webfonts/woff2/YekanBakhNoEn-Bold.woff2') format('woff2'),
+	url('./YekanBakh/Farsi-Numerals/otf/YekanBakhFaNum-Bold.otf') format('otf'),
+	url('./YekanBakh/Farsi-Numerals/YekanBakhFaNum-Bold.ttf') format('ttf'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff/YekanBakhFaNum-Bold.woff') format('woff'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff2/YekanBakhFaNum-Bold.woff2') format('woff2');
+	text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: "YekanBakh";
+	font-style: normal;
+	font-weight: bolder;
+	src: url('./YekanBakh/Font-Family/Webfonts/woff/YekanBakh-ExtraBold.woff') format('woff'),
+	url('./YekanBakh/Font-Family/Webfonts/woff2/YekanBakh-ExtraBold.woff2') format('woff2'),
+	url('./YekanBakh/Font-Family/YekanBakh-ExtraBold.ttf') format('ttf'),
+	url('./YekanBakh/Font-Family/otf/YekanBakh-ExtraBold.otf') format('otf'),
+	url('./YekanBakh/Non-English/YekanBakhNoEn-ExtraBold.ttf') format('ttf'),
+	url('./YekanBakh/Non-English/otf/YekanBakhNoEn-ExtraBold.otf') format('otf'),
+	url('./YekanBakh/Non-English/Webfonts/woff/YekanBakhNoEn-ExtraBold.woff') format('woff'),
+	url('./YekanBakh/Non-English/Webfonts/woff2/YekanBakhNoEn-ExtraBold.woff2') format('woff2'),
+	url('./YekanBakh/Farsi-Numerals/otf/YekanBakhFaNum-ExtraBold.otf') format('otf'),
+	url('./YekanBakh/Farsi-Numerals/YekanBakhFaNum-ExtraBold.ttf') format('ttf'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff/YekanBakhFaNum-ExtraBold.woff') format('woff'),
+	url('./YekanBakh/Farsi-Numerals/Webfonts/woff2/YekanBakhFaNum-ExtraBold.woff2') format('woff2');
+	text-rendering: optimizeLegibility;
+	font-display: swap;
+}

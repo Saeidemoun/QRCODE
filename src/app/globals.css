@@ -1,21 +1,33 @@
 @tailwind base;
 @tailwind components;
+@import url('../fonts/persianFonts.css');
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+    font-family: 'YekanBakh';
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+    outline: none;
+}
+
+@keyframes colorChange {
+  0% { color: whitesmoke; }
+  50% { color: #3a249e; } 
+  100% { color: #8872eb; } 
+}
+
+.animate {
+    animation: colorChange 1s forwards;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  .animate-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1.5s ease, transform 1s ease;
+  }
+  
+  .opacity-0 {
+    opacity: 0;
+    transform: translateY(20px);
+  }
